@@ -1,0 +1,106 @@
+/*Full Body*/
+body, html {
+    height: 100%;
+    margin: 0;
+}
+  
+.bg {
+    /* The image used */
+    background-image: url("images/f4cc.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*Nav bar*/
+/*Right*/
+.btn-outline-light{
+    border-color: transparent;
+    margin-left: 50px; 
+    margin-top: 30px;
+}
+.nav-link {
+    margin-left: 20px; 
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: larger;
+}
+.nav-link:hover {
+    color: turquoise;
+}
+/*Left*/
+
+.Dname{
+ 
+    /*margin-left: 100px;*/ 
+     
+    font-size: x-large; 
+    color: white;
+    font-family: arial;
+}
+/*Body*/
+/*side Bar*/
+body {margin:0}
+
+.icon-bar {
+  margin-top: 100px;
+  float: left;  
+  width: 50px;
+  background-color: rgb(9, 30, 88);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 18px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: rgb(255, 1, 1);
+}
+
+/*Media Query*/
+/*374*/
+@media only screen and (max-width: 555px) {
+
+    .nav-item {
+        width: 33.3%;
+
+    }
+    .nav-link {
+        margin-left: 0px; 
+        margin-top: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: larger;
+    }
+    .Dname {
+        
+        width: 100%;
+        text-align: center;
+    }
+    .Da {
+        width: 100%;
+    }
+
+}
+/*568*/
+@media only screen and (max-width: 555px) {
+
+}
+
+  
