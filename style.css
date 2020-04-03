@@ -6,7 +6,7 @@ body, html {
   
 .bg {
     /* The image used */
-    background-image: url("images/f4cc.jpg");
+    background-image: url("images/r1.jpg");
   
     /* Full height */
     height: 100%; 
@@ -17,43 +17,48 @@ body, html {
     background-size: cover;
 }
 
+/* Nav Bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgba(3, 118, 194, 0);
 
-/*Nav bar*/
-/*Right*/
-.btn-outline-light{
-    border-color: transparent;
-    margin-left: 50px; 
-    margin-top: 30px;
-}
-.nav-link {
-    margin-left: 20px; 
-    margin-top: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: larger;
-}
-.nav-link:hover {
-    color: turquoise;
-}
-/*Left*/
+  margin: 0px 50px 0px 50px;
 
-.Dname{
- 
-    /*margin-left: 100px;*/ 
-     
-    font-size: x-large; 
-    color: white;
-    font-family: arial;
 }
-/*Body*/
-/*side Bar*/
-body {margin:0}
 
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+
+font-family: Arial, Helvetica, sans-serif;
+font-size: larger;
+
+}
+
+.topnav a:hover {
+
+color: rgb(255, 0, 0);
+}
+
+.topnav a.active {
+background-color: rgba(3, 118, 194, 0);
+color: white;
+}
+
+.topnav .icon {
+display: none;
+}
+
+/* Icon Side Bar */
 .icon-bar {
   margin-top: 100px;
   float: left;  
   width: 50px;
-  background-color: rgb(9, 30, 88);
+  background-color: rgb(5, 116, 150);
 }
 
 .icon-bar a {
@@ -73,34 +78,166 @@ body {margin:0}
   background-color: rgb(255, 1, 1);
 }
 
-/*Media Query*/
-/*374*/
-@media only screen and (max-width: 555px) {
-
-    .nav-item {
-        width: 33.3%;
-
-    }
-    .nav-link {
-        margin-left: 0px; 
-        margin-top: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
-        font-size: larger;
-    }
-    .Dname {
-        
-        width: 100%;
-        text-align: center;
-    }
-    .Da {
-        width: 100%;
-    }
-
+/* ---------------  Container  ------------------- */
+#Dindex {
+  margin-top: 200px;
+  height: 150px;
 }
-/*568*/
-@media only screen and (max-width: 555px) {
-
+#Dabout {
+  line-height: 30px; 
+  color: white;
 }
 
+/* Solid border */
+.solid {
+    border-top: 3px solid #bbb;
+}
+/* Carousel */
+#slider {
+  margin-top: 0px;
+}
+
+#myCarousel .list-inline {
+  white-space:nowrap;
+  overflow-x:auto;
+}
+
+#myCarousel .carousel-indicators {
+  position: static;
+  left: initial;
+  width: initial;
+  margin-left: initial;
+}
+
+#myCarousel .carousel-indicators > li {
+  width: initial;
+  height: initial;
+  text-indent: initial;
+}
+
+#myCarousel .carousel-indicators > li.active img {
+  opacity: 0.7;
+}
+/* Footer */
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 210px;
+  background-color: rgba(255, 0, 0, 0.589);
+  color: white;
+  text-align: left;
+  line-height: 10px;
+  font-size: small;
+  border-radius: 40px 0px 0px 5px;
+}
+.footer p {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+/* .footer {
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  width: 30%;
+  height: 50px;
+  background-color: rgba(170, 45, 28, 0.486);
+  color: white;
+  text-align: center;
+}
+.footer a {
+  color: white;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.footer i {
+  margin-left: 3px; 
+
+} */
+
+/* -------------------------------------------- Media Query ---------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  /* NavBar */
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav {
+    margin: 0px 15px 0px 15px;
   
+  }
+  /* SideBar */
+  .icon-bar {
+    margin-top: 100px;
+    float: left;  
+    width: 36px;
+    background-color: rgb(5, 116, 150);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 11px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 12px;
+  }
+  /* Form */
+  .forma {
+    margin-top: 0px;
+    line-height: 10px;
+    font-size: small;
+  }
+  /* Footer */
+  /* .footer {
+    line-height: 20px;
+  }
+  .footer p {
+    margin-bottom: 5px;
+  } */
+
+}
+/* .forma { */
+  
+  /* line-height: 10px; */
+  /* font-size: small; */
+
+
+@media screen and (max-width: 412px) {
+  #Dindex {
+    margin-top: 100px;
+  }
+  #Dabout {
+    font-size: small; 
+
+  }
+
+}
+
+@media screen and (max-width: 460px) {
+  #Dabout {
+    line-height: 20px; 
+
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #slider {
+    margin-top: 50px; 
+
+  }
+}
+
