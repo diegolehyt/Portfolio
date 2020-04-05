@@ -21,9 +21,7 @@ body, html {
 .topnav {
   overflow: hidden;
   background-color: rgba(3, 118, 194, 0);
-
   margin: 0px 50px 0px 50px;
-
 }
 
 .topnav a {
@@ -58,8 +56,16 @@ display: none;
   margin-top: 100px;
   float: left;  
   width: 50px;
-  background-color: rgb(5, 116, 150);
+  background-color: rgb(30, 93, 145);
+  border-radius: 0px 15px 15px 0px;
+
+  /* Animation */
+  animation-name: example3;
+  animation-duration: 0.5s;  
+  animation-delay: 0s;
+  animation-fill-mode: both;
 }
+
 
 .icon-bar a {
   display: block;
@@ -68,25 +74,44 @@ display: none;
   transition: all 0.3s ease;
   color: white;
   font-size: 18px;
+
 }
 
 .icon-bar a:hover {
-  background-color: #000;
+  background-color: rgb(0, 255, 242);
+  color: black;
+ 
+}
+#resume:hover {
+  border-radius: 0px 0px 15px 0px;
 }
 
 .active {
   background-color: rgb(255, 1, 1);
+  border-radius: 0px 15px 0px 0px;
 }
+
+
 
 /* ---------------  Container  ------------------- */
 #Dindex {
   margin-top: 200px;
   height: 150px;
+
+  /* Animation */
+  animation-name: example5;
+  animation-duration: 1s;  
+  animation-delay: 1s;
+  animation-fill-mode: both;
 }
 #Dabout {
   line-height: 30px; 
   color: white;
 }
+#Dabout2 {
+  margin-top: 50px;
+}
+
 
 /* Solid border */
 .solid {
@@ -124,16 +149,29 @@ display: none;
   right: 0;
   bottom: 0;
   width: 210px;
+  height: 82px;
   background-color: rgba(255, 0, 0, 0.589);
   color: white;
   text-align: left;
   line-height: 10px;
   font-size: small;
   border-radius: 40px 0px 0px 5px;
+
+  /* Animation */
+  animation-name: example;
+  animation-duration: 1s;  
+  animation-delay: 0s;
+  animation-fill-mode: both;
 }
 .footer p {
   margin-left: 20px;
   margin-top: 20px;
+
+  /* Animation */
+  animation-name: example2;
+  animation-duration: 1s;  
+  animation-delay: 1s;
+  animation-fill-mode: both;
 }
 /* .footer {
   position: sticky;
@@ -232,6 +270,21 @@ display: none;
     line-height: 20px; 
 
   }
+  #Dabout2 {
+    margin-top: 30px;
+
+  }
+}
+@media screen and (max-width: 400px) {
+  #Dabout {
+    line-height: 16px; 
+    
+
+  }
+  #Dabout2 {
+    margin-top: 10px; 
+
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -240,4 +293,23 @@ display: none;
 
   }
 }
+/* Animation */
+/* div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;  
+  animation-delay: 2s;
+  animation-fill-mode: both;
+} */
 
+@keyframes example {
+  from {display: none; width: 0px;}
+  to {}
+}
+@keyframes example2 {
+  from {display: none;  color: rgba(8, 8, 71, 0);}
+  to {}
+}
